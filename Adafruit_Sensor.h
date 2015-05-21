@@ -104,8 +104,10 @@ typedef struct
     int32_t type;                             /**< sensor type */
     int32_t reserved0;                        /**< reserved */
     int32_t timestamp;                        /**< time is in milliseconds */
-    int16_t channelBroadband;
-    int16_t channelIR;
+    int16_t countBroadband;
+    int16_t countIR;
+    unsigned long channelBroadband;
+    unsigned long channelIR;
     union
     {
         float           data[4];
